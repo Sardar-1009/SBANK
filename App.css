@@ -1,0 +1,1166 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #202020;
+  color: white;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Ссылки навигации */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 110px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Действия (кнопки) */
+.navbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.login {
+  background-color: #ffcc00;
+  color: #004d99;
+
+}
+
+.btn.signup {
+  background-color: white;
+  color: #004d99;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Big Button */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  height: 555px;
+  margin-top: 130px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.text-container {
+  max-width: 400px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 64px;
+  margin: 10px 0;
+}
+
+.button {
+  background-color: #ffd600;
+  color: #202020;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffbf00;
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.icon-card {
+  background-color: #00a3e0;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-location {
+  background-color: #6c3eff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Card CSS */
+/* Контейнер для всех карточек */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px; /* Расстояние между карточками */
+  padding: 20px;
+  margin-top: 120px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+/* Общий стиль карточки */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #202020; /* Тёмный фон */
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%; /* Фиксированная ширина карточки */
+  height: 400px; /* Фиксированная высота карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Текстовый блок карточки */
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-description {
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #c7c7c7;
+}
+
+/* Блок с изображением */
+.card-image {
+  flex: 0 0 auto;
+  margin-top: 10px;
+}
+
+.card-image-home img {
+  width: 159px; /* Размер изображения */
+  height: auto;
+}
+
+/* Кнопка в карточке */
+.card-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card-button button {
+  background-color: white;
+  color: #202020;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card-button button:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Skachayte Component */
+/* Контейнер для всего компонента */
+.download-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202020;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  /* margin: 20px auto; */
+  /* width: 90%; */
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 320px;
+  margin-right: 320px;
+  margin-top: 50px;
+  height: 600px
+}
+
+/* Контейнер для текста и кнопок */
+.download-app-content {
+  max-width: 60%;
+}
+
+/* Заголовок */
+.download-app-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.download-app-content .highlight {
+  color: #577efc; /* Синий цвет для "SBANK" */
+}
+
+/* Описание */
+.download-app-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Кнопки для скачивания */
+.download-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.store-button {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.store-button:hover {
+  transform: scale(1.05);
+}
+
+/* Изображение телефона */
+.download-app-image {
+  max-width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.download-app-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+/* Bonus_Card */
+/* Контейнер для всех карточек */
+.points-container {
+  display: flex;
+  justify-content: space-between; /* Равномерное расстояние между карточками */
+  align-items: center; /* Выравнивание карточек по центру */
+   gap: 20px; /*Промежуток между карточками */
+  padding: 20px; 
+  /* background-color: #ffffff;  */
+  margin-left: 300px;
+  margin-right: 300px;
+  
+}
+
+/* Стили карточки */
+.points-card {
+  background-color: #202020;
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%; /* Фиксированная ширина карточки */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.text-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.avatar {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Valutes */
+/* Контейнер для всех карточек */
+.dashboard {
+  display: flex;
+  justify-content: space-between; /* Равномерное размещение карточек */
+  gap: 20px; /* Расстояние между карточками */
+  padding: 20px;
+  /* background-color: #ffffff; */
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+/* Общие стили для карточек */
+.card_news {
+  background-color: #202020;
+  color: white;
+  border-radius: 16px;
+  padding: 20px; 
+  width: 50%;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.card_currency{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #202020; /* Тёмный фон */
+  color:    white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 50%; /* Фиксированная ширина карточки */
+  height: 400px; /* Фиксированная высота карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+
+}
+
+/* Заголовок карточки */
+.card-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Стили для валютного блока */
+.currency-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.currency-flag {
+  width: 40px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.currency-value {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+/* Стили для новостного блока */
+.news-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.news-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.news-date {
+  font-size: 28px;
+  color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+/* Footer.css */
+
+/* Общий стиль футера */
+.footer {
+  background-color: #202020; /* Голубой фон */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* Красно-коричневый цвет текста */
+  text-align: center;
+  margin-top: 250px
+}
+
+/* Контейнер футера */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  
+}
+
+/* Соцсети */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Расстояние между иконками */
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ffffff; /* Более тёмный оттенок при наведении */
+}
+
+/* Разделительная линия */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #d0d0d0;
+  margin: 20px 0;
+}
+
+/* Нижняя часть футера */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffffff; /* Более тёмный оттенок при наведении */
+}
+
+
+
+
+
+
+
+
+
+
+/* Deposite_page */
+/* Общий контейнер */
+.deposits-container {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;  
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: #000;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.header-icons div {
+  text-align: center;
+}
+
+.header-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Steps Section */
+.steps-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.step {
+  text-align: center;
+  background: #333;
+  padding: 20px;
+  border-radius: 15px;
+  width: 30%;
+  height:200px;
+}
+
+.step h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Cards Section */
+.deposit-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.card_deposite {
+  display: flex;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-imageD {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+
+
+}
+
+.sr-image {
+  background-image: url('/images/sr-deposit.png');
+}
+
+.child-image {
+  background-image: url('/images/child-deposit.png');
+}
+
+.child2-image {
+  background-image: url('/images/child2-deposit.png');
+}
+
+.card-content {
+  padding: 20px;  
+  margin-left: 250px;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.card-content li {
+  margin-bottom: 5px;
+}
+
+button {
+  background: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0088cc;
+}
+
+
+
+
+
+
+/* Credit_Card_Page */
+/* Общий контейнер */
+.creditcards-container {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  grid-template-columns: 1fr, 1fr;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+/* Заголовок */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+/* Сетка для карточек */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 карточки в строке */
+  gap: 20px; /* Отступы между карточками */
+  justify-items: center; /* Центровка карточек */
+}
+
+/* Карточка */
+.card_credit {
+  background-color: #111;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-align: left;
+  min-width: 500px;
+  min-height: 400px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.card-image img {
+  width: 350px;
+  height: auto;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.card-details {
+  padding: 15px 20px;
+}
+
+.card-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.details-button {
+  display: block;
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: #666;
+}
+
+
+
+
+
+
+
+/* Deposite_Page_Calculator+ */
+/* Общие стили */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #ffffff;
+}
+
+/* Header */
+.header_page_calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1f1f1f;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+/* Info Section */
+.deposit-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #0D0D0D;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 120px;
+}
+
+.info-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.terms p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.info-image img {
+  width: 150px;
+}
+
+/* Conditions Section */
+.conditions {
+  padding: 30px;
+  background-color: #1f1f1f;
+  border-top: 1px solid #333;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 120px;
+  border-radius: 34
+}
+
+.conditions h2 {
+  margin-bottom: 15px;
+}
+
+.conditions ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Calculator Section */
+.calculator {
+  padding: 30px;
+  text-align: center;
+  /* margin-top: 120px; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+}
+
+.input-group,
+.rate-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group select,
+.rate-input input {
+  width: 350px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.term-slider input {
+  width: 80%;
+  margin: 10px 0;
+}
+
+.calculate-btn {
+  padding: 10px 20px;
+  background-color: #2979ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.calculate-btn:hover {
+  background-color: #0056d2;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #4caf50;
+}
+
+/* Footer */
+.footer {
+  background-color: #181818;
+  padding: 20px 30px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* Сredit_Page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.summary, .categories, .calculator, .application-form {
+  margin-bottom: 20px;
+}
+
+.apply-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.categories div {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.calculator input, .application-form input, .application-form button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.application-form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/* News_Page */
+/* .body_news {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.news-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card_page {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin-left: 300px;
+  margin-right: 300px;
+
+  height: 260px;
+  
+}
+
+.news-image {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+.news-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-date {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.news-link {
+  color: #f0b429;
+  text-decoration: none;
+  font-size: 16px;
+  align-self: flex-start;
+  transition: color 0.3s ease;
+}
+
+.news-link:hover {
+  color: #ffc857;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Osago/ */
+.insurance-page {
+  font-family: Arial, sans-serif;
+  background-color: "#0D0D0D";
+  color: #fff;
+  padding: 20px;
+}
+
+.insurance-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.insurance-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.insurance-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+ul, ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.insurance-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+}
